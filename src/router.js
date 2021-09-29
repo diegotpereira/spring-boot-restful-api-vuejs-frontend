@@ -13,7 +13,7 @@ export default new Router({
                 import ('./components/ClienteLista')
         },
         {
-            path: '/cliente/:id',
+            path: '/clientes/:id',
             name: 'editar-cliente',
             component: () =>
                 import ('./components/EditarCliente')
