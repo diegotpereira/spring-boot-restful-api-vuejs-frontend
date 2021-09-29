@@ -1,27 +1,25 @@
 <template>
-    <div>
         <div v-if="clienteAtual">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control"  id="nome" required  name="nome" v-model="cliente.nome">
+                <input type="text" class="form-control"  id="nome" required  name="nome" v-model="clienteAtual.nome">
             </div>
             <div class="mb-3">
                 <label for="sobrenome" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control"  id="sobrenome" required  name="sobrenome" v-model="cliente.sobrenome">
+                <input type="text" class="form-control"  id="sobrenome" required  name="sobrenome" v-model="clienteAtual.sobrenome">
             </div>
              <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control"  id="email" required  name="email" v-model="cliente.email">
+                <input type="text" class="form-control"  id="email" required  name="email" v-model="clienteAtual.email">
             </div>
              <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone</label>
-                <input type="text" class="form-control"  id="telefone" required  name="telefone" v-model="cliente.telefone">
+                <input type="text" class="form-control"  id="telefone" required  name="telefone" v-model="clienteAtual.telefone">
             </div>
             <div class="mb-3">
-                <button @click="atualizarCliente" class="btn btn-primary">Atualizar</button>
-                <button @click="deletarCliente" class="btn btn-primary">Deletar</button>
+                <button @click="atualizarCliente" class="btn btn-primary me-3">Atualizar</button>
+                <button @click="deletarCliente" class="btn btn-danger">Deletar</button>
             </div>
-        </div>
         <div class="alert alert-success" role="alert" v-if="message">
             {{message}}
         </div>
