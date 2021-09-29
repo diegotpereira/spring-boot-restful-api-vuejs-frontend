@@ -16,7 +16,7 @@
                     <td>{{cliente.sobrenome}}</td>
                     <td>{{cliente.email}}</td>
                     <td>{{cliente.telefone}}</td>
-                    <td><a href="'/clientes/' + cliente.id" class="btn btn-primary">Editar</a></td>
+                    <td><a :href="'/clientes/' + cliente.id" class="btn btn-primary">Editar</a></td>
                 </tr>
             </tbody>
         </table>
